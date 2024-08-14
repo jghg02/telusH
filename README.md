@@ -4,6 +4,12 @@
 
 TelusHAssessment is an iOS application that allows users to discover popular movies and view details about them. It follows the principles of Clean Architecture, ensuring a scalable and maintainable codebase. The app fetches data from The Movie Database (TMDb) API to display movie information, including similar movies, on a detail screen.
 
+
+### Video 
+
+https://github.com/user-attachments/assets/569c3887-65de-4305-a354-87bab1eb3584
+
+
 ## Features
 
 - **Movie List**: Displays a list of popular movies fetched from TMDb.
@@ -26,7 +32,7 @@ This project follows the Clean Architecture approach:
 - Swift 5.7 or later
 - iOS 15.0 or later
 
-Project Structure
+## Project Structure
 
 - Networking: Handles network requests using the NET library, which simplifies making HTTP requests and handling responses.
 - UseCases: Contains the use cases responsible for fetching movies and similar movies. Example: FetchPopularMoviesUseCase.
