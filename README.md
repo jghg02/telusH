@@ -71,6 +71,6 @@ MovieService fetches data from TMDb API:
 
 ## Dependencies
 
-	- **[NET](https://github.com/jghg02/NET)**: A custom networking library used to handle HTTP requests and responses. Developed by me 
-	- **Combine**: Apple’s framework for processing asynchronous events over time.
+- **[NET](https://github.com/jghg02/NET)**: A custom networking library used to handle HTTP requests and responses. Developed by me 
+- **Combine**: Apple’s framework for processing asynchronous events over time.
  
