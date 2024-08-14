@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA002AC62C6AEA7E00B26949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA002AC52C6AEA7E00B26949 /* AppDelegate.swift */; };
+		CA002ACF2C6AEA7F00B26949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA002ACE2C6AEA7F00B26949 /* Assets.xcassets */; };
+		CA002AD22C6AEA7F00B26949 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CA002AD12C6AEA7F00B26949 /* Base */; };
+		CA002ADB2C6AEB1200B26949 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA002ADA2C6AEB1200B26949 /* Coordinator.swift */; };
+		CA002ADD2C6AEB2C00B26949 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA002ADC2C6AEB2C00B26949 /* MainCoordinator.swift */; };
+		CA002AE12C6AEB5800B26949 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA002AE02C6AEB5800B26949 /* MainViewController.swift */; };
+		CA002AE42C6AEC6800B26949 /* NET in Frameworks */ = {isa = PBXBuildFile; productRef = CA002AE32C6AEC6800B26949 /* NET */; };
+		CA002AE72C6AF10200B26949 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA002AE62C6AF10200B26949 /* Movie.swift */; };
+		CA002AEA2C6AF14100B26949 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA002AE92C6AF14100B26949 /* MovieService.swift */; };
+		CA002AED2C6AF1FB00B26949 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA002AEC2C6AF1FB00B26949 /* MovieRepository.swift */; };
+		CA002AF02C6AF21000B26949 /* FetchPopularMoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA002AEF2C6AF21000B26949 /* FetchPopularMoviesUseCase.swift */; };
+		CA002AF32C6AF22B00B26949 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA002AF22C6AF22B00B26949 /* MainViewModel.swift */; };
+		CA002AF52C6AF79000B26949 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA002AF42C6AF79000B26949 /* MovieCell.swift */; };
+		CA002AF72C6B045100B26949 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA002AF62C6B045100B26949 /* MovieDetailViewController.swift */; };
+		CA1566B52C6C55BF0040C866 /* MainViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1566B42C6C55BF0040C866 /* MainViewModelTest.swift */; };
+		CA1566B92C6C5B4E0040C866 /* MainCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1566B82C6C5B4E0040C866 /* MainCoordinatorTests.swift */; };
+		CA1566BB2C6C5BAD0040C866 /* FetchPopularMoviesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1566BA2C6C5BAD0040C866 /* FetchPopularMoviesUseCaseTests.swift */; };
+		CA1566BD2C6C5C760040C866 /* MovieRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1566BC2C6C5C760040C866 /* MovieRepositoryTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA1566AF2C6C55A20040C866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA002ABA2C6AEA7E00B26949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA002AC12C6AEA7E00B26949;
+			remoteInfo = TelusHAssessment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA002AC22C6AEA7E00B26949 /* TelusHAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelusHAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA002AC52C6AEA7E00B26949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA002ACE2C6AEA7F00B26949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA002AD12C6AEA7F00B26949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA002AD32C6AEA7F00B26949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA002ADA2C6AEB1200B26949 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CA002ADC2C6AEB2C00B26949 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		CA002AE02C6AEB5800B26949 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CA002AE62C6AF10200B26949 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		CA002AE92C6AF14100B26949 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		CA002AEC2C6AF1FB00B26949 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		CA002AEF2C6AF21000B26949 /* FetchPopularMoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPopularMoviesUseCase.swift; sourceTree = "<group>"; };
+		CA002AF22C6AF22B00B26949 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CA002AF42C6AF79000B26949 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		CA002AF62C6B045100B26949 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		CA1566AB2C6C55A20040C866 /* TelusHAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelusHAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1566B42C6C55BF0040C866 /* MainViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTest.swift; sourceTree = "<group>"; };
+		CA1566B82C6C5B4E0040C866 /* MainCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorTests.swift; sourceTree = "<group>"; };
+		CA1566BA2C6C5BAD0040C866 /* FetchPopularMoviesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPopularMoviesUseCaseTests.swift; sourceTree = "<group>"; };
+		CA1566BC2C6C5C760040C866 /* MovieRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepositoryTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA002ABF2C6AEA7E00B26949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA002AE42C6AEC6800B26949 /* NET in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1566A82C6C55A20040C866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA002AB92C6AEA7E00B26949 = {
+			isa = PBXGroup;
+			children = (
+				CA002AC42C6AEA7E00B26949 /* TelusHAssessment */,
+				CA1566AC2C6C55A20040C866 /* TelusHAssessmentTests */,
+				CA002AC32C6AEA7E00B26949 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA002AC32C6AEA7E00B26949 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA002AC22C6AEA7E00B26949 /* TelusHAssessment.app */,
+				CA1566AB2C6C55A20040C866 /* TelusHAssessmentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA002AC42C6AEA7E00B26949 /* TelusHAssessment */ = {
+			isa = PBXGroup;
+			children = (
+				CA002AE82C6AF11100B26949 /* NetWorking */,
+				CA002ADE2C6AEB4900B26949 /* HomeScreen */,
+				CA002AD92C6AEB0300B26949 /* Coordinator */,
+				CA002AC52C6AEA7E00B26949 /* AppDelegate.swift */,
+				CA002ACE2C6AEA7F00B26949 /* Assets.xcassets */,
+				CA002AD02C6AEA7F00B26949 /* LaunchScreen.storyboard */,
+				CA002AD32C6AEA7F00B26949 /* Info.plist */,
+			);
+			path = TelusHAssessment;
+			sourceTree = "<group>";
+		};
+		CA002AD92C6AEB0300B26949 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CA002ADA2C6AEB1200B26949 /* Coordinator.swift */,
+				CA002ADC2C6AEB2C00B26949 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CA002ADE2C6AEB4900B26949 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CA002AF12C6AF21D00B26949 /* ViewModel */,
+				CA002AEE2C6AF20700B26949 /* UseCase */,
+				CA002AEB2C6AF1EF00B26949 /* Repository */,
+				CA002AE52C6AF0FA00B26949 /* Data */,
+				CA002ADF2C6AEB5000B26949 /* View */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		CA002ADF2C6AEB5000B26949 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA002AE02C6AEB5800B26949 /* MainViewController.swift */,
+				CA002AF42C6AF79000B26949 /* MovieCell.swift */,
+				CA002AF62C6B045100B26949 /* MovieDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA002AE52C6AF0FA00B26949 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CA002AE62C6AF10200B26949 /* Movie.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CA002AE82C6AF11100B26949 /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				CA002AE92C6AF14100B26949 /* MovieService.swift */,
+			);
+			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		CA002AEB2C6AF1EF00B26949 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CA002AEC2C6AF1FB00B26949 /* MovieRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CA002AEE2C6AF20700B26949 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				CA002AEF2C6AF21000B26949 /* FetchPopularMoviesUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		CA002AF12C6AF21D00B26949 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CA002AF22C6AF22B00B26949 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CA1566AC2C6C55A20040C866 /* TelusHAssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA1566B42C6C55BF0040C866 /* MainViewModelTest.swift */,
+				CA1566B82C6C5B4E0040C866 /* MainCoordinatorTests.swift */,
+				CA1566BA2C6C5BAD0040C866 /* FetchPopularMoviesUseCaseTests.swift */,
+				CA1566BC2C6C5C760040C866 /* MovieRepositoryTest.swift */,
+			);
+			path = TelusHAssessmentTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA002AC12C6AEA7E00B26949 /* TelusHAssessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA002AD62C6AEA7F00B26949 /* Build configuration list for PBXNativeTarget "TelusHAssessment" */;
+			buildPhases = (
+				CA002ABE2C6AEA7E00B26949 /* Sources */,
+				CA002ABF2C6AEA7E00B26949 /* Frameworks */,
+				CA002AC02C6AEA7E00B26949 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelusHAssessment;
+			packageProductDependencies = (
+				CA002AE32C6AEC6800B26949 /* NET */,
+			);
+			productName = TelusHAssessment;
+			productReference = CA002AC22C6AEA7E00B26949 /* TelusHAssessment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA1566AA2C6C55A20040C866 /* TelusHAssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA1566B32C6C55A20040C866 /* Build configuration list for PBXNativeTarget "TelusHAssessmentTests" */;
+			buildPhases = (
+				CA1566A72C6C55A20040C866 /* Sources */,
+				CA1566A82C6C55A20040C866 /* Frameworks */,
+				CA1566A92C6C55A20040C866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA1566B02C6C55A20040C866 /* PBXTargetDependency */,
+			);
+			name = TelusHAssessmentTests;
+			productName = TelusHAssessmentTests;
+			productReference = CA1566AB2C6C55A20040C866 /* TelusHAssessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA002ABA2C6AEA7E00B26949 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					CA002AC12C6AEA7E00B26949 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					CA1566AA2C6C55A20040C866 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CA002AC12C6AEA7E00B26949;
+					};
+				};
+			};
+			buildConfigurationList = CA002ABD2C6AEA7E00B26949 /* Build configuration list for PBXProject "TelusHAssessment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA002AB92C6AEA7E00B26949;
+			packageReferences = (
+				CA002AE22C6AEC6800B26949 /* XCRemoteSwiftPackageReference "NET" */,
+			);
+			productRefGroup = CA002AC32C6AEA7E00B26949 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA002AC12C6AEA7E00B26949 /* TelusHAssessment */,
+				CA1566AA2C6C55A20040C866 /* TelusHAssessmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA002AC02C6AEA7E00B26949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA002ACF2C6AEA7F00B26949 /* Assets.xcassets in Resources */,
+				CA002AD22C6AEA7F00B26949 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1566A92C6C55A20040C866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA002ABE2C6AEA7E00B26949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA002AEA2C6AF14100B26949 /* MovieService.swift in Sources */,
+				CA002ADB2C6AEB1200B26949 /* Coordinator.swift in Sources */,
+				CA002AC62C6AEA7E00B26949 /* AppDelegate.swift in Sources */,
+				CA002AF02C6AF21000B26949 /* FetchPopularMoviesUseCase.swift in Sources */,
+				CA002AE12C6AEB5800B26949 /* MainViewController.swift in Sources */,
+				CA002AED2C6AF1FB00B26949 /* MovieRepository.swift in Sources */,
+				CA002ADD2C6AEB2C00B26949 /* MainCoordinator.swift in Sources */,
+				CA002AE72C6AF10200B26949 /* Movie.swift in Sources */,
+				CA002AF52C6AF79000B26949 /* MovieCell.swift in Sources */,
+				CA002AF72C6B045100B26949 /* MovieDetailViewController.swift in Sources */,
+				CA002AF32C6AF22B00B26949 /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1566A72C6C55A20040C866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1566BD2C6C5C760040C866 /* MovieRepositoryTest.swift in Sources */,
+				CA1566BB2C6C5BAD0040C866 /* FetchPopularMoviesUseCaseTests.swift in Sources */,
+				CA1566B52C6C55BF0040C866 /* MainViewModelTest.swift in Sources */,
+				CA1566B92C6C5B4E0040C866 /* MainCoordinatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA1566B02C6C55A20040C866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA002AC12C6AEA7E00B26949 /* TelusHAssessment */;
+			targetProxy = CA1566AF2C6C55A20040C866 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA002AD02C6AEA7F00B26949 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA002AD12C6AEA7F00B26949 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA002AD42C6AEA7F00B26949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA002AD52C6AEA7F00B26949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA002AD72C6AEA7F00B26949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96583FPNGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TelusHAssessment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jghg02.TelusHAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA002AD82C6AEA7F00B26949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96583FPNGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TelusHAssessment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jghg02.TelusHAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA1566B12C6C55A20040C866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96583FPNGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jghg02.TelusHAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelusHAssessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TelusHAssessment";
+			};
+			name = Debug;
+		};
+		CA1566B22C6C55A20040C866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96583FPNGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jghg02.TelusHAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelusHAssessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TelusHAssessment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA002ABD2C6AEA7E00B26949 /* Build configuration list for PBXProject "TelusHAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA002AD42C6AEA7F00B26949 /* Debug */,
+				CA002AD52C6AEA7F00B26949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA002AD62C6AEA7F00B26949 /* Build configuration list for PBXNativeTarget "TelusHAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA002AD72C6AEA7F00B26949 /* Debug */,
+				CA002AD82C6AEA7F00B26949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA1566B32C6C55A20040C866 /* Build configuration list for PBXNativeTarget "TelusHAssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA1566B12C6C55A20040C866 /* Debug */,
+				CA1566B22C6C55A20040C866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA002AE22C6AEC6800B26949 /* XCRemoteSwiftPackageReference "NET" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jghg02/NET";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA002AE32C6AEC6800B26949 /* NET */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA002AE22C6AEC6800B26949 /* XCRemoteSwiftPackageReference "NET" */;
+			productName = NET;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CA002ABA2C6AEA7E00B26949 /* Project object */;
+}
