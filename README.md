@@ -1,4 +1,4 @@
-# TelusHAssessment
+# TelusHealth Assessment
 
 ## Overview
 
