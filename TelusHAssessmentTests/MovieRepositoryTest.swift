@@ -83,65 +83,6 @@ final class MovieRepositoryTests: XCTestCase {
             XCTFail("Expected NSError, but got a different error")
         }
     }
-    
-    func testGetSimilarMoviesReturnsSuccess() async {
-        // Given
-        let expectedMovies = MoviesResponse(
-            page: 1,
-            results: [
-                Movie(
-                    id: 2,
-                    title: "Similar Movie",
-                    overview: "Similar Overview",
-                    posterPath: nil,
-                    releaseDate: "2024-08-12",
-                    voteAverage: 8.0,
-                    voteCount: 200,
-                    adult: false,
-                    backdropPath: nil,
-                    genreIds: [16, 35],
-                    originalLanguage: "en",
-                    originalTitle: "Similar Movie",
-                    video: false,
-                    popularity: 150.0
-                )
-            ],
-            totalPages: 1,
-            totalResults: 1
-        )
-        
-        mockService.similarMoviesResult = .success(expectedMovies)
-        
-        // When
-        let result = await repository.getSimilarMovies(movieId: 2)
-
-        // Then
-        switch result {
-        case .success(let moviesResponse):
-            XCTAssertNotNil(moviesResponse)
-        case .failure:
-            XCTFail("Expected success, but got failure")
-        }
-    }
-    
-    func testGetSimilarMoviesReturnsFailure() async {
-        // Given
-        let expectedError = NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Failed to fetch similar movies"])
-        mockService.similarMoviesResult = .failure(expectedError)
-        
-        // When
-        let result = await repository.getSimilarMovies(movieId: 2)
-
-        // Then
-        switch result {
-        case .success:
-            XCTFail("Expected failure, but got success")
-        case .failure(let error as NSError):
-            XCTAssertEqual(error, expectedError, "Expected the error to be returned by getSimilarMovies()")
-        default:
-            XCTFail("Expected NSError, but got a different error")
-        }
-    }
 }
 
 class MockMovieService: MovieServiceProtocol {

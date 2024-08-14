@@ -9,7 +9,6 @@ import Foundation
 
 protocol MovieRepositoryProtocol {
     func getPopularMovies() async -> Result<MoviesResponse, Error>
-    func getSimilarMovies(movieId: Int) async -> Result<MoviesResponse, Error>
 }
 
 class MovieRepository: MovieRepositoryProtocol {
@@ -21,9 +20,5 @@ class MovieRepository: MovieRepositoryProtocol {
     
     func getPopularMovies() async -> Result<MoviesResponse, Error> {
         return await movieService.fetchPopularMovies()
-    }
-    
-    func getSimilarMovies(movieId: Int) async -> Result<MoviesResponse, Error> { // New method
-        return await movieService.fetchSimilarMovies(movieId: movieId)
     }
 }

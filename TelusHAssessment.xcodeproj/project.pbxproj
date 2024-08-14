@@ -25,6 +25,7 @@
 		CA1566B92C6C5B4E0040C866 /* MainCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1566B82C6C5B4E0040C866 /* MainCoordinatorTests.swift */; };
 		CA1566BB2C6C5BAD0040C866 /* FetchPopularMoviesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1566BA2C6C5BAD0040C866 /* FetchPopularMoviesUseCaseTests.swift */; };
 		CA1566BD2C6C5C760040C866 /* MovieRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1566BC2C6C5C760040C866 /* MovieRepositoryTest.swift */; };
+		CA4087B02C6D1B5400EDA8E9 /* MovieServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4087AF2C6D1B5400EDA8E9 /* MovieServiceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		CA1566B82C6C5B4E0040C866 /* MainCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorTests.swift; sourceTree = "<group>"; };
 		CA1566BA2C6C5BAD0040C866 /* FetchPopularMoviesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPopularMoviesUseCaseTests.swift; sourceTree = "<group>"; };
 		CA1566BC2C6C5C760040C866 /* MovieRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepositoryTest.swift; sourceTree = "<group>"; };
+		CA4087AF2C6D1B5400EDA8E9 /* MovieServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServiceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				CA1566B82C6C5B4E0040C866 /* MainCoordinatorTests.swift */,
 				CA1566BA2C6C5BAD0040C866 /* FetchPopularMoviesUseCaseTests.swift */,
 				CA1566BC2C6C5C760040C866 /* MovieRepositoryTest.swift */,
+				CA4087AF2C6D1B5400EDA8E9 /* MovieServiceTest.swift */,
 			);
 			path = TelusHAssessmentTests;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA1566BD2C6C5C760040C866 /* MovieRepositoryTest.swift in Sources */,
+				CA4087B02C6D1B5400EDA8E9 /* MovieServiceTest.swift in Sources */,
 				CA1566BB2C6C5BAD0040C866 /* FetchPopularMoviesUseCaseTests.swift in Sources */,
 				CA1566B52C6C55BF0040C866 /* MainViewModelTest.swift in Sources */,
 				CA1566B92C6C5B4E0040C866 /* MainCoordinatorTests.swift in Sources */,
